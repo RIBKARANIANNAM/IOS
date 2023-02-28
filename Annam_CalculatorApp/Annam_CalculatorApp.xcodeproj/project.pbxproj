@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		644201F2299827FA00E36890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644201F1299827FA00E36890 /* AppDelegate.swift */; };
+		644201F4299827FA00E36890 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644201F3299827FA00E36890 /* SceneDelegate.swift */; };
+		644201F6299827FA00E36890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644201F5299827FA00E36890 /* ViewController.swift */; };
+		644201F9299827FA00E36890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644201F7299827FA00E36890 /* Main.storyboard */; };
+		644201FB299827FB00E36890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 644201FA299827FB00E36890 /* Assets.xcassets */; };
+		644201FE299827FB00E36890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 644201FC299827FB00E36890 /* LaunchScreen.storyboard */; };
+		64420209299827FC00E36890 /* Annam_CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64420208299827FC00E36890 /* Annam_CalculatorAppTests.swift */; };
+		64420213299827FC00E36890 /* Annam_CalculatorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64420212299827FC00E36890 /* Annam_CalculatorAppUITests.swift */; };
+		64420215299827FC00E36890 /* Annam_CalculatorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64420214299827FC00E36890 /* Annam_CalculatorAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64420205299827FC00E36890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 644201E6299827F900E36890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 644201ED299827F900E36890;
+			remoteInfo = Annam_CalculatorApp;
+		};
+		6442020F299827FC00E36890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 644201E6299827F900E36890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 644201ED299827F900E36890;
+			remoteInfo = Annam_CalculatorApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		644201EE299827F900E36890 /* Annam_CalculatorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Annam_CalculatorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		644201F1299827FA00E36890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		644201F3299827FA00E36890 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		644201F5299827FA00E36890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		644201F8299827FA00E36890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		644201FA299827FB00E36890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		644201FD299827FB00E36890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		644201FF299827FB00E36890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64420204299827FC00E36890 /* Annam_CalculatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Annam_CalculatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64420208299827FC00E36890 /* Annam_CalculatorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annam_CalculatorAppTests.swift; sourceTree = "<group>"; };
+		6442020E299827FC00E36890 /* Annam_CalculatorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Annam_CalculatorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64420212299827FC00E36890 /* Annam_CalculatorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annam_CalculatorAppUITests.swift; sourceTree = "<group>"; };
+		64420214299827FC00E36890 /* Annam_CalculatorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annam_CalculatorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		644201EB299827F900E36890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64420201299827FC00E36890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6442020B299827FC00E36890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		644201E5299827F900E36890 = {
+			isa = PBXGroup;
+			children = (
+				644201F0299827F900E36890 /* Annam_CalculatorApp */,
+				64420207299827FC00E36890 /* Annam_CalculatorAppTests */,
+				64420211299827FC00E36890 /* Annam_CalculatorAppUITests */,
+				644201EF299827F900E36890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		644201EF299827F900E36890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				644201EE299827F900E36890 /* Annam_CalculatorApp.app */,
+				64420204299827FC00E36890 /* Annam_CalculatorAppTests.xctest */,
+				6442020E299827FC00E36890 /* Annam_CalculatorAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		644201F0299827F900E36890 /* Annam_CalculatorApp */ = {
+			isa = PBXGroup;
+			children = (
+				644201F1299827FA00E36890 /* AppDelegate.swift */,
+				644201F3299827FA00E36890 /* SceneDelegate.swift */,
+				644201F5299827FA00E36890 /* ViewController.swift */,
+				644201F7299827FA00E36890 /* Main.storyboard */,
+				644201FA299827FB00E36890 /* Assets.xcassets */,
+				644201FC299827FB00E36890 /* LaunchScreen.storyboard */,
+				644201FF299827FB00E36890 /* Info.plist */,
+			);
+			path = Annam_CalculatorApp;
+			sourceTree = "<group>";
+		};
+		64420207299827FC00E36890 /* Annam_CalculatorAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				64420208299827FC00E36890 /* Annam_CalculatorAppTests.swift */,
+			);
+			path = Annam_CalculatorAppTests;
+			sourceTree = "<group>";
+		};
+		64420211299827FC00E36890 /* Annam_CalculatorAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64420212299827FC00E36890 /* Annam_CalculatorAppUITests.swift */,
+				64420214299827FC00E36890 /* Annam_CalculatorAppUITestsLaunchTests.swift */,
+			);
+			path = Annam_CalculatorAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		644201ED299827F900E36890 /* Annam_CalculatorApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64420218299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorApp" */;
+			buildPhases = (
+				644201EA299827F900E36890 /* Sources */,
+				644201EB299827F900E36890 /* Frameworks */,
+				644201EC299827F900E36890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Annam_CalculatorApp;
+			productName = Annam_CalculatorApp;
+			productReference = 644201EE299827F900E36890 /* Annam_CalculatorApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64420203299827FC00E36890 /* Annam_CalculatorAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6442021B299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorAppTests" */;
+			buildPhases = (
+				64420200299827FC00E36890 /* Sources */,
+				64420201299827FC00E36890 /* Frameworks */,
+				64420202299827FC00E36890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64420206299827FC00E36890 /* PBXTargetDependency */,
+			);
+			name = Annam_CalculatorAppTests;
+			productName = Annam_CalculatorAppTests;
+			productReference = 64420204299827FC00E36890 /* Annam_CalculatorAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6442020D299827FC00E36890 /* Annam_CalculatorAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6442021E299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorAppUITests" */;
+			buildPhases = (
+				6442020A299827FC00E36890 /* Sources */,
+				6442020B299827FC00E36890 /* Frameworks */,
+				6442020C299827FC00E36890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64420210299827FC00E36890 /* PBXTargetDependency */,
+			);
+			name = Annam_CalculatorAppUITests;
+			productName = Annam_CalculatorAppUITests;
+			productReference = 6442020E299827FC00E36890 /* Annam_CalculatorAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		644201E6299827F900E36890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					644201ED299827F900E36890 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					64420203299827FC00E36890 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 644201ED299827F900E36890;
+					};
+					6442020D299827FC00E36890 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 644201ED299827F900E36890;
+					};
+				};
+			};
+			buildConfigurationList = 644201E9299827F900E36890 /* Build configuration list for PBXProject "Annam_CalculatorApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 644201E5299827F900E36890;
+			productRefGroup = 644201EF299827F900E36890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				644201ED299827F900E36890 /* Annam_CalculatorApp */,
+				64420203299827FC00E36890 /* Annam_CalculatorAppTests */,
+				6442020D299827FC00E36890 /* Annam_CalculatorAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		644201EC299827F900E36890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644201FE299827FB00E36890 /* LaunchScreen.storyboard in Resources */,
+				644201FB299827FB00E36890 /* Assets.xcassets in Resources */,
+				644201F9299827FA00E36890 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64420202299827FC00E36890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6442020C299827FC00E36890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		644201EA299827F900E36890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				644201F6299827FA00E36890 /* ViewController.swift in Sources */,
+				644201F2299827FA00E36890 /* AppDelegate.swift in Sources */,
+				644201F4299827FA00E36890 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64420200299827FC00E36890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64420209299827FC00E36890 /* Annam_CalculatorAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6442020A299827FC00E36890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64420215299827FC00E36890 /* Annam_CalculatorAppUITestsLaunchTests.swift in Sources */,
+				64420213299827FC00E36890 /* Annam_CalculatorAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64420206299827FC00E36890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 644201ED299827F900E36890 /* Annam_CalculatorApp */;
+			targetProxy = 64420205299827FC00E36890 /* PBXContainerItemProxy */;
+		};
+		64420210299827FC00E36890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 644201ED299827F900E36890 /* Annam_CalculatorApp */;
+			targetProxy = 6442020F299827FC00E36890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		644201F7299827FA00E36890 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				644201F8299827FA00E36890 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		644201FC299827FB00E36890 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				644201FD299827FB00E36890 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64420216299827FC00E36890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64420217299827FC00E36890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64420219299827FC00E36890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Annam_CalculatorApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Annam_CalculatorApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6442021A299827FC00E36890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Annam_CalculatorApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Annam_CalculatorApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6442021C299827FC00E36890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Annam_CalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Annam_CalculatorApp";
+			};
+			name = Debug;
+		};
+		6442021D299827FC00E36890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Annam_CalculatorApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Annam_CalculatorApp";
+			};
+			name = Release;
+		};
+		6442021F299827FC00E36890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Annam_CalculatorApp;
+			};
+			name = Debug;
+		};
+		64420220299827FC00E36890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.Annam-CalculatorAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Annam_CalculatorApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		644201E9299827F900E36890 /* Build configuration list for PBXProject "Annam_CalculatorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64420216299827FC00E36890 /* Debug */,
+				64420217299827FC00E36890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64420218299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64420219299827FC00E36890 /* Debug */,
+				6442021A299827FC00E36890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6442021B299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6442021C299827FC00E36890 /* Debug */,
+				6442021D299827FC00E36890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6442021E299827FC00E36890 /* Build configuration list for PBXNativeTarget "Annam_CalculatorAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6442021F299827FC00E36890 /* Debug */,
+				64420220299827FC00E36890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 644201E6299827F900E36890 /* Project object */;
+}
