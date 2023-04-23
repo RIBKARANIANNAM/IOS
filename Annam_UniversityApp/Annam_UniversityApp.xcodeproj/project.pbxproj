@@ -19,7 +19,6 @@
 		6499715729EBA376005DB50D /* UniversityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499715629EBA376005DB50D /* UniversityListViewController.swift */; };
 		6499715929EBA429005DB50D /* UniversityInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499715829EBA429005DB50D /* UniversityInfoViewController.swift */; };
 		6499715B29EBA91B005DB50D /* Universities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499715A29EBA91B005DB50D /* Universities.swift */; };
-		6499715D29EBA94E005DB50D /* UniversityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499715C29EBA94E005DB50D /* UniversityList.swift */; };
 		6499715F29EBA980005DB50D /* UniversityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6499715E29EBA980005DB50D /* UniversityList.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		6499715629EBA376005DB50D /* UniversityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityListViewController.swift; sourceTree = "<group>"; };
 		6499715829EBA429005DB50D /* UniversityInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityInfoViewController.swift; sourceTree = "<group>"; };
 		6499715A29EBA91B005DB50D /* Universities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universities.swift; sourceTree = "<group>"; };
-		6499715C29EBA94E005DB50D /* UniversityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityList.swift; sourceTree = "<group>"; };
 		6499715E29EBA980005DB50D /* UniversityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversityList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,7 +118,6 @@
 				6499715629EBA376005DB50D /* UniversityListViewController.swift */,
 				6499715829EBA429005DB50D /* UniversityInfoViewController.swift */,
 				6499715A29EBA91B005DB50D /* Universities.swift */,
-				6499715C29EBA94E005DB50D /* UniversityList.swift */,
 			);
 			path = Annam_UniversityApp;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 				6499715B29EBA91B005DB50D /* Universities.swift in Sources */,
 				6499715929EBA429005DB50D /* UniversityInfoViewController.swift in Sources */,
 				6499715F29EBA980005DB50D /* UniversityList.swift in Sources */,
-				6499715D29EBA94E005DB50D /* UniversityList.swift in Sources */,
 				6499712929EBA1BC005DB50D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

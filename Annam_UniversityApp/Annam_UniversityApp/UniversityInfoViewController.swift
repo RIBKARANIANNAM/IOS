@@ -12,6 +12,7 @@ class UniversityInfoViewController: UIViewController {
     @IBOutlet weak var universityImageViewOutlet: UIImageView!
     
     @IBAction func showInfoAction(_ sender: UIButton) {
+        universityInfoOutlet.text = university?.collegeInfo
     }
     
     @IBOutlet weak var universityInfoOutlet: UITextView!
@@ -20,13 +21,14 @@ class UniversityInfoViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-
+            universityImageViewOutlet.frame.origin.x = view.frame.width
             // Do any additional setup after loading the view.
-            if let university = self.university {
-                self.title = university.collegeName
-                self.universityImageViewOutlet.image = UIImage(named:university.collegeImage)
-                self.universityInfoOutlet.text = university.collegeInfo
-            }
+            universityImageViewOutlet.image = UIImage(named: university!.collegeImage)
+            UIView.animate(withDuration: 1, delay: 0, animations: {
+                self.universityImageViewOutlet.center.x = self.view.center.x
+            })
+            
+            
         }
         
         

@@ -7,79 +7,37 @@
 
 import UIKit
 
-class UniversityListViewController: UIViewController {
+class UniversityListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return universities.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = universityListTableView.dequeueReusableCell(withIdentifier: "listCell", for: indexPath)
+        cell.textLabel?.text = universities[indexPath.row].collegeName
+        return cell
+    }
+    
 
-    @IBOutlet weak var universityListTableView: UITableViewCell!
+    @IBOutlet weak var universityListTableView: UITableView!
+    
+    var universities: [UniversityList] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        universityListTableView.dataSource = self
+        universityListTableView.delegate = self
     }
-    // MARK: - Properties
-        
-        var domain: String?
-        var universities: [University] = []
-        
-        
-        
 
-        
-        // MARK: - View Lifecycle
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            // Set title
-            title = domain
-            
-            // Register cell nib
-            let nib = UINib(nibName: "UniversityTableViewCell", bundle: nil)
-            universityListTableView.register(nib, forCellReuseIdentifier: "universityCell")
-            
-            // Load universities
-            if let domain = domain {
-                universities = Universities.list_Array.filter { $0.domain == domain }
-            }
-        }
-        
-        // MARK: - UITableViewDataSource
-        
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return universities.count
-        }
-        
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = universityListTableView.dequeueReusableCell(withIdentifier: "universityCell", for: indexPath) as! UniversityTableViewCell
-            
-            let university = universities[indexPath.row]
-            cell.configure(with: university)
-            
-            return cell
-        }
-        
-        // MARK: - UITableViewDelegate
-        
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let university = universities[indexPath.row]
-            
-            // Perform segue to UniversityInfoViewController
-            performSegue(withIdentifier: "universityInfoSegue", sender: university)
-        }
-        
-        // MARK: - Navigation
-        
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "universityInfoSegue" {
-                if let university = sender as? Universities,
-                    let destinationVC = segue.destination as? UniversityInfoViewController {
-                    destinationVC.university = universities
-                }
-            }
+    // MARK: - Table view data source
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "universityInfoSegue" {
+            let universityInfoVC = segue.destination as! UniversityInfoViewController
+            universityInfoVC.university = universities[(universityListTableView.indexPathForSelectedRow?.row)!]
+            universityInfoVC.title = universities[(universityListTableView.indexPathForSelectedRow?.row)!].collegeName
         }
     }
-    
-    
 
-    
-
-
+}
