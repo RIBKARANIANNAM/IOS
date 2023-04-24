@@ -8,80 +8,64 @@
 import UIKit
 
 class GenreViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate{
-
     
-
-        @IBOutlet weak var genreTableView: UITableView!
+    
+    
+    
+    @IBOutlet weak var genreTableView: UITableView!
+    var genres: [Genre] = []
+    var selectedGenere: Genre?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        let genres: [Genre] = MovieData.genres
+        //genres = MovieData.getGenres()
         
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            // Set up table view
-            genreTableView.delegate = self
-            genreTableView.dataSource = self
-            genreTableView.register(UITableViewCell.self, forCellReuseIdentifier: "sectionCell")
-        }
-        
-        // MARK: - Table view data source
-
-        func numberOfSections(in tableView: UITableView) -> Int {
-            return genres.count
-        }
-
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
-
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
-            cell.textLabel?.text = genres[indexPath.section].category
-            return cell
-        }
-        
-        // MARK: - Table view delegate
-        
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            let moviesVC = storyboard?.instantiateViewController(withIdentifier: "MoviesViewController") as! MoviesViewController
-            moviesVC.movies = genres[indexPath.section].movies
-            moviesVC.title = genres[indexPath.section].category
-            navigationController?.pushViewController(moviesVC, animated: true)
-        }
-
+        // Set up table view
+        genreTableView.delegate = self
+        genreTableView.dataSource = self
+        genreTableView.register(UITableViewCell.self, forCellReuseIdentifier: "sectionCell")
     }
-
-}
-
-class UniversitiesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    // MARK: - Table view data source
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return genres.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return domains.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell  = universitiesTableView.dequeueReusableCell(withIdentifier: "domainCell", for: indexPath)
-        cell.textLabel?.text = domains[indexPath.row].domain
+        let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
+        cell.textLabel?.text = genres[indexPath.section].category
         return cell
     }
     
+    // MARK: - Table view delegate
     
-    
-    
-    @IBOutlet weak var universitiesTableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = "Domains"
-        // Do any additional setup after loading the view.
-        universitiesTableView.dataSource = self
-        universitiesTableView.delegate = self
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let moviesVC = storyboard?.instantiateViewController(withIdentifier: "MoviesViewController") as! MoviesViewController
+        moviesVC.movies = genres[indexPath.section].movies
+        moviesVC.title = genres[indexPath.section].category
+        navigationController?.pushViewController(moviesVC, animated: true)
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "listsSegue" {
-            var destination = segue.destination as! UniversityListViewController
-            destination.universities = domains[(universitiesTableView.indexPathForSelectedRow?.row)!].list_Array
-            destination.title =  domains[(universitiesTableView.indexPathForSelectedRow?.row)!].domain
+    
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "movieSegue", let moviesVC = segue.destination as? MoviesViewController, let selectedGenre = sender as? Genre {
+                moviesVC.genre = selectedGenre
+                title = selectedGenre.category
+            }
         }
         
-        
     }
-}
+    
+
+    
+    
+    
+    
+   
+

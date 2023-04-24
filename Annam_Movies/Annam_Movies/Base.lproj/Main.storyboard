@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Genre View Controller-->
+        <!--Movies App-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="GenreViewController" customModule="Annam_Movies" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,7 +44,10 @@
                             <constraint firstItem="P3I-2k-RZS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sQJ-vr-Li8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="XLh-4p-s9A"/>
+                    <navigationItem key="navigationItem" title="Movies App" id="XLh-4p-s9A"/>
+                    <connections>
+                        <outlet property="genreTableView" destination="P3I-2k-RZS" id="uqM-27-Iih"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,7 +72,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4O9-c2-8Af">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4O9-c2-8Af" customClass="MovieCollectionViewCell" customModule="Annam_Movies" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Csd-Tl-o8x">
@@ -82,6 +85,9 @@
                                                 </imageView>
                                             </subviews>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageViewOutlet" destination="u36-P0-Nab" id="qQo-sd-Thn"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -134,6 +140,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cjb-G5-rbz"/>
+                    <connections>
+                        <outlet property="movieBoxOfficeLabel" destination="T6y-Vd-cc0" id="oTV-Lr-9Kt"/>
+                        <outlet property="movieCastLabel" destination="vao-3Z-ht3" id="BVk-BN-QDZ"/>
+                        <outlet property="movieCollectionView" destination="rQX-hZ-qcq" id="kpC-rL-OVD"/>
+                        <outlet property="movieNameLabel" destination="jas-o0-X9H" id="ddQ-vS-Y13"/>
+                        <outlet property="moviePlotLabel" destination="auJ-Ky-NvQ" id="vld-ly-H8K"/>
+                        <outlet property="movieRatingLabel" destination="A3i-XL-nWc" id="uhq-42-sqg"/>
+                        <outlet property="movieYearLabel" destination="8iw-ob-p6O" id="7Qi-cw-0Xj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IMe-10-Oub" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
